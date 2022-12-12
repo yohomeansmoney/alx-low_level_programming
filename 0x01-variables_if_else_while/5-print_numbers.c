@@ -6,16 +6,15 @@
  */
 
 int main(void)
-
 {
 	int c;
 
 	c = 0;
 	while
-		(c < 10){
-	i		putchar(c + '0');
+		(c < 10) {
+			putchar(c + '0');
 			c++;
 		}
-i	putchar('\n');
+	putchar('\n');
 	return (0);
 }
