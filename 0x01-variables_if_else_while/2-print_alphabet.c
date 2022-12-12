@@ -4,7 +4,7 @@
 /**
  * main - returns alphabets
  *
- * Return: Always 0 (Success)
+ *  Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -12,10 +12,8 @@ int main(void)
 
 	while (ch <= 'z')
 	{
-
-
-				putchar(ch);
-				ch++;
+		putchar(ch);
+		ch++;
 	}
 	putchar('\n');
 	return (0);
