@@ -1,28 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- *  print_last_digit - last digit
- *
- *  @n: The int to print
- *  Return: Always 0
+ * print_to_98 - print all numbers from input to 98
+ *  @n: the starting number
  */
-
-
-
-int print_last_digit(int n)
+void print_to_98(int n)
 {
-	int last_digit;
-
-	if (n < 0)
+	if (n >= 98)
 	{
-		last_digit = (-1 * (n % 10));
-		_putchar(last_digit + '0');
-		return (last_digit);
+		while (n > 98)
+			printf("%d, ", n--);
+		printf("%d\n", n);
 	}
 	else
 	{
-		last_digit = (n % 10);
-		_putchar (last_digit + '0');
-		return (last_digit);
+		while (n < 98)
+			printf("%d, ", n++);
+		printf("%d\n", n);
 	}
 }
